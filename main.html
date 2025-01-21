@@ -1,35 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Footer</title>
+  <style>
+    /* Basic styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
-        </div>
-        <div class="link-boxes">
-          <!-- your code here -->
-        </div>
-      </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-      </div>
-    </footer>
-  </body>
+    /* Footer styling */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    /* Footer sections */
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+      margin: 10px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 5px;
+    }
+
+    .footer-section a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+
+    .footer-section a:hover {
+      color: #f1c40f;
+    }
+
+    /* Media Icons */
+    .media-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .media-icons a {
+      text-decoration: none;
+    }
+
+    .media-icons img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .media-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer Contact Number */
+    .contact-number {
+      font-size: 16px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-section {
+        width: 100%;
+        text-align: center;
+      }
+
+      .media-icons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- Home Section -->
+    <div class="footer-section">
+      <h3>Home</h3>
+      <ul>
+        <li><a href="#">Homepage</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+
+    <!-- About Section -->
+    <div class="footer-section">
+      <h3>About</h3>
+      <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Mission & Vision</a></li>
+        <li><a href="#">Team</a></li>
+      </ul>
+    </div>
+
+    <!-- Links Section -->
+    <div class="footer-section">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">App Development</a></li>
+        <li><a href="#">SEO Services</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p class="contact-number">Phone: 8879887262</p>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="footer-section media-icons">
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Facebook_Logo_2023.png/800px-Facebook_Logo_2023.png" alt="Facebook"></a>
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Twitter_logo_2012.svg" alt="Twitter"></a>
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Youtube_icon_%282013-2017%29.svg/600px-Youtube_icon_%282013-2017%29.svg.png" alt="YouTube"></a>
+    </div>
+  </footer>
+
+</body>
 </html>
